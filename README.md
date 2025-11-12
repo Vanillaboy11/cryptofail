@@ -170,7 +170,7 @@ python app.py
 
 ### Credenciales de Prueba
 - **Usuario**: admin
-- **Contraseña**: admin123
+- **Contraseña**: admin1234
 
 ---
 
