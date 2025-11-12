@@ -1,9 +1,9 @@
-# 🔐 Seminario de Hacking Ético — A02: Cryptographic Failures
+# Seminario de Hacking Ético — A02: Cryptographic Failures
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto demuestra **múltiples vulnerabilidades criptográficas críticas** (OWASP Top 10 - A02) mediante una aplicación Flask con sistema de autenticación y manejo de datos sensibles.
 
-## 🎯 Objetivos de Aprendizaje
+## Objetivos de Aprendizaje
 - Identificar fallos criptográficos comunes en aplicaciones web
 - Demostrar el impacto real de usar algoritmos débiles
 - Implementar soluciones criptográficas robustas
@@ -11,13 +11,13 @@ Este proyecto demuestra **múltiples vulnerabilidades criptográficas críticas*
 
 ---
 
-## 🚨 Versión Vulnerable (`main/`)
+## Versión Vulnerable (`main/`)
 
 ### Vulnerabilidades Implementadas
 
 #### 1. **Secret Key Predecible**
 ```python
-app.secret_key = 'supersecretkey'  # ❌ Hardcodeada y débil
+app.secret_key = 'supersecretkey'  
 ```
 **Impacto**: Session hijacking, forja de tokens
 
@@ -76,7 +76,7 @@ python app.py
 
 ---
 
-## ✅ Versión Segura (`fixed/`)
+## Versión Segura (`fixed/`)
 
 ### Soluciones Implementadas
 
@@ -109,12 +109,12 @@ verified = check_password_hash(hashed, password)
 ```
 
 #### 5. **Protecciones Adicionales**
-- ✅ Session fixation protection
-- ✅ Enmascaramiento de datos sensibles
-- ✅ Headers de seguridad HTTP
-- ✅ Timing attack protection
-- ✅ User enumeration prevention
-- ✅ Debug mode deshabilitado
+- Session fixation protection
+- Enmascaramiento de datos sensibles
+- Headers de seguridad HTTP
+- Timing attack protection
+- User enumeration prevention
+- Debug mode deshabilitado
 
 ### Demostración de la Defensa
 
@@ -144,7 +144,7 @@ admin|pbkdf2:sha256:260000$randomsalt$longhashvalue...
 
 ---
 
-## 🛠️ Instalación y Ejecución
+## Instalación y Ejecución
 
 ### Requisitos
 - Python 3.8+
@@ -153,7 +153,7 @@ admin|pbkdf2:sha256:260000$randomsalt$longhashvalue...
 ### Setup
 ```bash
 # Clonar el repositorio
-git clone <tu-repo>
+git clone 
 cd cryptofail
 
 # Instalar dependencias
@@ -174,7 +174,7 @@ python app.py
 
 ---
 
-## 📊 Comparativa de Seguridad
+## Comparativa de Seguridad
 
 | Aspecto | VULNERABLE (main) | SEGURO (fixed) |
 |---------|-------------------|----------------|
@@ -189,7 +189,7 @@ python app.py
 
 ---
 
-## 🎓 Conceptos Clave
+## Conceptos Clave
 
 ### Diferencias Importantes
 
@@ -216,7 +216,7 @@ Argon2: Ganador PHC 2015, resistente a GPU/ASIC
 
 ---
 
-## 🎤 Estructura de la Presentación
+## Estructura de la Presentación
 
 ### Acto 1: El Concepto (5 min)
 - ¿Qué son las Cryptographic Failures?
@@ -242,7 +242,7 @@ Argon2: Ganador PHC 2015, resistente a GPU/ASIC
 
 ---
 
-## 📚 Referencias
+## Referencias
 
 - [OWASP Top 10 - A02:2021](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
 - [NIST Password Guidelines](https://pages.nist.gov/800-63-3/sp800-63b.html)
@@ -251,14 +251,8 @@ Argon2: Ganador PHC 2015, resistente a GPU/ASIC
 
 ---
 
-## ⚠️ Advertencia Legal
+## ☺ Autores
 
-Este proyecto es EXCLUSIVAMENTE para fines educativos. La versión vulnerable (`main/`) contiene fallos de seguridad intencionales y NO debe usarse en producción. El uso indebido de estas técnicas en sistemas sin autorización es ILEGAL.
-
----
-
-## 👥 Autores
-[Tu Equipo Aquí]
-
-## 📝 Licencia
-MIT - Uso Educativo
+- Eliel Alfonso Ontiveros Ojeda
+- Salvador Isaac Reyes Varela
+- Cesar Alejandro Velazquez Mercado
