@@ -1,7 +1,7 @@
 import sqlite3
 
 print("="*70)
-print("🔴 BASE DE DATOS VULNERABLE (main/database_vulnerable.db)")
+print("BASE DE DATOS VULNERABLE (main/database_vulnerable.db)")
 print("="*70)
 conn = sqlite3.connect('main/database_vulnerable.db')
 cursor = conn.cursor()
