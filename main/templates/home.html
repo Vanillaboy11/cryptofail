@@ -128,8 +128,18 @@
     <p style="text-align: center;">
       Acceso concedido al sistema. Disfruta de tu sesión.
     </p>
+
+    {% if email %}
+    <p style="text-align: center; color: #666;">
+      📧 Email: {{ email }}
+    </p>
+    {% endif %}
     
-    <button class="btn-logout" onclick="window.location.href='/'">
+    <button class="btn-logout" onclick="window.location.href='/profile'">
+      Ver Perfil Completo
+    </button>
+    
+    <button class="btn-logout" onclick="window.location.href='/logout'" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); margin-top: 10px;">
       Cerrar Sesión
     </button>
   </div>
